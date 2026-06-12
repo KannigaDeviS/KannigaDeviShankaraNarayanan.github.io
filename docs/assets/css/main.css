@@ -156,6 +156,7 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  gap: 10px;
 }
 
 .header .logo img {
@@ -168,6 +169,40 @@ h6 {
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
+}
+
+.header .logo .hire-me-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3ea1ff 0%, #0078ff 55%, #005ed9 100%);
+  border: 1px solid rgba(173, 216, 255, 0.7);
+  box-shadow: 0 6px 16px rgba(0, 80, 180, 0.35);
+  transform: rotate(-5deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.header .logo:hover .hire-me-tag {
+  transform: rotate(0deg) translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 90, 200, 0.45);
+}
+
+@media (max-width: 576px) {
+  .header .logo {
+    gap: 8px;
+  }
+
+  .header .logo .hire-me-tag {
+    padding: 5px 10px;
+    font-size: 0.95rem;
+  }
 }
 
 .scrolled .header {
